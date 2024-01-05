@@ -10,7 +10,7 @@ import org.testng.annotations.BeforeMethod;
 
 
 public class BaseClass{
-@BeforeTest
+@BeforeClass
 	public void OpenBrowser(){
 	Reporter.log("Succuesfully open",true);}
 @BeforeMethod
@@ -21,7 +21,7 @@ public void login() {
 public void logout() {
 	Reporter.log("Logout SUccuss",true);
 }
-@AfterTest
+@AfterClass
 public void CloseBrowser() {
 	Reporter.log("Succuessfully Closed",true);
 
